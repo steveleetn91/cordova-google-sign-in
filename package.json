@@ -1,0 +1,26 @@
+{
+  "name": "cordova-google-sign-in",
+  "version": "1.0.0",
+  "description": "Cordova support google sign in",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveleetn91/cordova-google-sign-in.git"
+  },
+  "keywords": [
+    "cordova",
+    "cordova",
+    "plugin",
+    "cordova",
+    "google"
+  ],
+  "author": "stevelee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveleetn91/cordova-google-sign-in/issues"
+  },
+  "homepage": "https://github.com/steveleetn91/cordova-google-sign-in#readme"
+}

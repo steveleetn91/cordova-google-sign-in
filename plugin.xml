@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-google-sign-in"
+    version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Cordova Google Sign-in</name>
+    <description>Plugin support Google Sign-in
+    </description>
+    <author>SteveLee</author>
+    <license>MIT</license>
+    <keywords>cordova, cordova plugin, cordova google sign-in
+    </keywords>
+    <repo>https://github.com/steveleetn91/cordova-google-sign-in.git</repo>
+    <issue>https://github.com/steveleetn91/cordova-google-sign-in.git/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=4.0" />
+    </engines>
+    <js-module name="googlesignin" src="src/index.js">
+        <clobbers target="googlesignin" />
+        <clobbers target="plugins.googlesignin" />
+    </js-module>
+    <platform name="android">
+        <framework src="build-extras.gradle" custom="true" type="gradleReference" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="GoogleSignInInit">
+                <param name="android-package" value="org.apache.cordova.GoogleSignInInit" />
+            </feature>
+        </config-file>
+        <source-file src="native/android/GoogleSignInInit.java" target-dir="org/apache/cordova" />
+        <source-file src="native/android/CordovaEventBuilder.java" target-dir="org/apache/cordova" />
+    </platform>
+
+    <platform name="ios">
+    </platform>
+    
+</plugin>
