@@ -30,6 +30,14 @@
     </platform>
 
     <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="GoogleSignInInit">
+                <param name="ios-package" value="GoogleSignInInit" />
+            </feature>
+        </config-file>
+
+        <header-file src="native/ios/GoogleSignInInit.h" />
+        <source-file src="native/ios/GoogleSignInInit.m" />
     </platform>
     
 </plugin>
