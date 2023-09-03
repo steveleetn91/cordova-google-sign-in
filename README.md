@@ -19,6 +19,7 @@ Before install this plugin you need consider `https://github.com/steveleetn91/co
 ### Prepare 
 
 You need add this config into `config.xml` for iOS platform.
+
     <platform name="ios">
         <config-file parent="GIDClientID" target="*-Info.plist" >
             <string>xxxxxxx</string>
