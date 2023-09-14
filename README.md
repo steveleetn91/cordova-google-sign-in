@@ -43,9 +43,6 @@ You need add this config into `config.xml` for iOS platform.
 
     cordova plugin add https://github.com/steveleetn91/cordova-google-sign-in.git
 
-Don't build while you just installed plugin. You shuold open your project by Xcode and add package `https://github.com/google/GoogleSignIn-iOS.git`.
-I has been testing version `7.0 ~ 7.1`. Got completed you can take a built. Good luck!
-
 ## How to use? 
     
     window.googlesignin.googlesignin().then(() => {

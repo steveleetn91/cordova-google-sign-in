@@ -38,6 +38,13 @@
 
         <header-file src="native/ios/GoogleSignInInit.h" />
         <source-file src="native/ios/GoogleSignInInit.m" />
+
+        <podspec>
+            <pods use-frameworks="true">
+                <pod name="GoogleSignIn" spec="7.0.0"/>
+            </pods>
+        </podspec>
+
     </platform>
     
 </plugin>
